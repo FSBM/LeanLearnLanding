@@ -19,7 +19,8 @@ import NotesReveal from "./components/notesReveal";
 import NotesWithBlue from './assets/NotesAndDoodle/NotesWithBlue.svg'
 import FloatingGirl from './assets/NotesAndDoodle/Floating_girl_2.svg'
 import ButtonSlide from "./components/ui/ButtonSlide";
-
+import Footer_1 from "./components/Footer";
+import Banner from './assets/Banner.svg'
 
 
 
@@ -32,8 +33,8 @@ export default function SpaceLanding() {
         <StarsBackground />
         <header className="flex justify-between items-center w-[100vw] text-white px-5">
           <>
-          <img src={IconTxt} alt="" className=" w-[150px] md:min-w-[160px] z-20 p-4" />
-          <ButtonSlide Text="Sign Up"  />
+            <img src={IconTxt} alt="" className=" w-[150px] md:min-w-[160px] z-20 p-4" />
+            <ButtonSlide Text="Sign Up" />
           </>
         </header>
 
@@ -117,26 +118,35 @@ export default function SpaceLanding() {
           <img src={ThirdPIc} className=" max-w-[300px]" />
         </div> */}
 
-        <div className="w-[100vw] flex flex-col items-center justify-center m-auto">
-          <h1>What Are the benifits</h1>
-          <div className="flex flex-col lg:flex-row">
-            <NotesReveal positionFrom={-200} positionTo={50}>
-              <img src={NotesWithBlue} alt="" className="w-[70%] -rotate-12" />
-            </NotesReveal>
-            <NotesReveal positionFrom={200} positionTo={50}>
-              <img src={NotesWithBlue} alt="" className="w-[70%] rotate-12" />
-            </NotesReveal>
+        <div className="">
+          <div className="w-[100vw] flex flex-col items-center justify-center m-auto">
+            <h1>What Are the benifits</h1>
+            <div className="flex flex-col lg:flex-row">
+              <NotesReveal positionFrom={-200} positionTo={50}>
+                <img src={NotesWithBlue} alt="" className="w-[70%] -rotate-12" />
+              </NotesReveal>
+              <NotesReveal positionFrom={200} positionTo={50}>
+                <img src={NotesWithBlue} alt="" className="w-[70%] rotate-12" />
+              </NotesReveal>
+            </div>
+
+            <div className="flex flex-col lg:flex-row">
+              <NotesReveal positionFrom={-200} positionTo={50}>
+                <img src={NotesWithBlue} alt="" className="w-[70%] -rotate-12" />
+              </NotesReveal>
+              <NotesReveal positionFrom={200} positionTo={50}>
+                <img src={NotesWithBlue} alt="" className="w-[70%] rotate-12" />
+              </NotesReveal>
+            </div>
+
           </div>
 
-          <div className="flex flex-col lg:flex-row"> 
-            <NotesReveal positionFrom={-200} positionTo={50}>
-              <img src={NotesWithBlue} alt="" className="w-[70%] -rotate-12" />
-            </NotesReveal>
-            <NotesReveal positionFrom={200} positionTo={50}>
-              <img src={NotesWithBlue} alt="" className="w-[70%] rotate-12" />
-            </NotesReveal>
-          </div>
 
+          <div className="flex flex-col items-center text-white p-5 mt-28 border-b-white w-full text-center bg-[#409213] ">
+            <h1 className=" text-3xl md:text-6xl font-semibold">Heading</h1>
+            <p className="p-5">your gateway to interactive learning experiences.Explore our engaging courses, discussions, and <br />resources to enhance your skills and knowledge in a collaborative and dynamic environment.</p>
+            <img src={Banner} alt="" className=" md:w-[50%] mt-5" />
+          </div>
         </div>
 
 
@@ -164,10 +174,9 @@ export default function SpaceLanding() {
           {/* <img src={BgforStdnt} alt="absolute" /> */}
         </div>
         <ShootingStars />
+
       </div>
-      <footer className=" bg-green">
-          
-      </footer>
+      <Footer_1 />
 
     </>
   )
