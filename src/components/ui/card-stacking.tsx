@@ -1,4 +1,4 @@
-import Page from '../../assets/vecteezy_note-paper-page_27524846-Photoroom.png';
+import Page from '../../assets/notesWithGreenTop.svg';
 
 export default function CardStacking() {
     return (
