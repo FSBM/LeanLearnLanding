@@ -16,7 +16,7 @@ import { Meteors } from "./components/ui/meteors";
 import ChmEQn from './assets/chemicalEqn.png'
 import Fx from './assets/f(x).png'
 import NotesReveal from "./components/notesReveal";
-import NotesWithBlue from './assets/NotesAndDoodle/NotesWithBlue.svg'
+import NotesWithBlue from './assets/NotesAndDoodle/NotesWithGreen.svg'
 import FloatingGirl from './assets/NotesAndDoodle/Floating_girl_2.svg'
 import ButtonSlide from "./components/ui/ButtonSlide";
 import Footer_1 from "./components/Footer";
@@ -31,7 +31,7 @@ export default function SpaceLanding() {
 
       <div className="min-h-screen bg-[#0c0c0c] relative overflow-hidden flex flex-col">
         <StarsBackground />
-        <header className="flex justify-between items-center w-[100vw] text-white px-5">
+        <header className="flex justify-between items-center w-[100vw] text-white px-5 rounded-b-lg backdrop-blur-md fixed top-0 z-50 /">
           <>
             <img src={IconTxt} alt="" className=" w-[150px] md:min-w-[160px] z-20 p-4" />
             <ButtonSlide Text="Sign Up" />
@@ -142,10 +142,16 @@ export default function SpaceLanding() {
           </div>
 
 
-          <div className="flex flex-col items-center text-white p-5 mt-28 border-b-white w-full text-center bg-[#409213] ">
+          <div className="flex flex-col items-center text-white p-5 mt-28 border-b-white w-full text-center
+          relative
+          bg-[url(./assets/BackgroundForST.svg)]
+          bg-cover
+          pb-5
+          ">
             <h1 className=" text-3xl md:text-6xl font-semibold">Heading</h1>
             <p className="p-5">your gateway to interactive learning experiences.Explore our engaging courses, discussions, and <br />resources to enhance your skills and knowledge in a collaborative and dynamic environment.</p>
             <img src={Banner} alt="" className=" md:w-[50%] mt-5" />
+            
           </div>
         </div>
 
@@ -170,7 +176,7 @@ export default function SpaceLanding() {
 
           <img
             src={STudentLkUP} alt="" className="absolute right-0 bottom-0 max-h-[300px]" />
-          <Meteors number={10} className="absolute  left-0 bottom-0" />
+          <Meteors number={10} className="absolute  left-0 " />
           {/* <img src={BgforStdnt} alt="absolute" /> */}
         </div>
         <ShootingStars />
